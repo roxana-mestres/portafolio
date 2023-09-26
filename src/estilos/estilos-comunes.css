@@ -13,9 +13,18 @@ h1 {
   font-weight: 700;
   font-size: 5em;
 }
-h3 {
+h2 {
   font-weight: 500;
   font-size: 3em;
+}
+h3 {
+  font-weight: 500;
+  font-size: 2em;
+}
+h4 {
+  font-weight: 500;
+  font-size: 22px;
+  font-style: italic;
 }
 button {
   background-color: transparent;
@@ -39,25 +48,21 @@ nav {
   align-items: center;
   padding: 35px;
 }
-
 nav ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
 }
-
 nav li {
   padding: 0 35px;
   display: inline-block;
   position: relative;
 }
-
 nav li a {
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
 }
-
 nav li::after {
   content: "";
   display: block;
@@ -72,30 +77,64 @@ nav li::after {
 nav li:hover::after {
   width: 100%;
 }
-
 nav li:hover {
   font-weight: bold;
 }
-
 .boton {
   color: inherit;
-  align-self: flex-start;
   letter-spacing: 1px;
   cursor: pointer;
   background-color: transparent;
-  margin: 10px;
   padding: 10px;
-  position: relative;
   border: 2px solid #222;
-  border-right-width: 4px;
-  border-bottom-width: 4px;
+  border-right-width: 5px;
+  border-bottom-width: 5px;
   border-radius: 15px;
   transition: background-color 0.2s, color 0.2s;
 }
-
 .boton:hover {
   background-color: #222;
   color: #eae1df;
   border: 2px solid #222;
   font-weight: bold;
+}
+div.puntos {
+  background-image: url(../assets/imagen-puntos.svg);
+  background-repeat: repeat-x;
+  background-size: cover;
+  width: calc(100vw - 80px);
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100px;
+  border: 3px solid #222;
+}
+.bordes {
+  border-right: 3px solid #222;
+  border-left: 3px solid #222;
+}
+.margenes-contenedor {
+  width: calc(100vw - 80px);
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.contenedor-pastillas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  margin-left: 40px;
+}
+
+.pastillas {
+  display: inline-block;
+  letter-spacing: 1px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #222;
+  color: #eae1df;
 }

@@ -1,0 +1,19 @@
+.contenedor-columna {
+  width: calc(100vw - 80px);
+  margin: 0 40px;
+  padding: 40px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  border-left: 3px solid #222;
+  border-right: 3px solid #222;
+}
+
+.contenedor-columna p {
+  line-height: 35px;
+}
+
+.columna {
+  flex: 1;
+}

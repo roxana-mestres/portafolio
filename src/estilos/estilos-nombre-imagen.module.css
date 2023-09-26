@@ -1,7 +1,9 @@
 div.contenedor-general {
   width: calc(100vw - 80px);
-  margin: 40px;
-  height: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  height: auto;
 }
 div.ubicacion {
   display: flex;
@@ -13,7 +15,7 @@ div.ubicacion {
 }
 div.fecha-ubicacion {
   height: auto;
-  padding: 10px;
+  padding-left: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -54,10 +56,11 @@ div.imagen:hover {
 }
 div.contacto {
   display: flex;
-  height: auto;
+
   width: 100%;
-  padding: 10px;
-  border: 3px solid #222;
+  border-left: 3px solid #222;
+  border-right: 3px solid #222;
+  border-top: 3px solid #222;
   justify-content: space-around;
 }
 div.telefono,
@@ -72,13 +75,9 @@ div.telefono,
   margin-left: 10px;
   margin-right: 20px;
 }
-div.cuadricula {
-  background-image: url(../assets/imagen-cuadricula.svg);
-  background-repeat: repeat-x;
-  background-size: contain;
-  width: 100%;
-  height: 20%;
-  border-left: 3px solid #222;
-  border-right: 3px solid #222;
-  border-bottom: 3px solid #222;
+.boton-cv {
+  margin: 0 auto;
+  margin-top: 10px;
+  font-weight: bold;
+  padding: 20px;
 }
