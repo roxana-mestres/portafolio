@@ -7,20 +7,24 @@ div.contenedor-general {
 }
 div.ubicacion {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  padding: 20px;
 }
 .ubicacion p {
-  padding-left: 10px;
+  font-size: 20px;
+  padding-right: 40px;
 }
 div.fecha-ubicacion {
   height: auto;
-  padding-left: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 3px solid #222;
+}
+.fecha {
+  padding-left: 40px;
+  font-size: 20px;
 }
 div.titulo-imagen {
   display: flex;
@@ -56,12 +60,12 @@ div.imagen:hover {
 }
 div.contacto {
   display: flex;
-
+  padding: 20px;
   width: 100%;
   border-left: 3px solid #222;
   border-right: 3px solid #222;
   border-top: 3px solid #222;
-  justify-content: space-around;
+  position: relative;
 }
 div.telefono,
 .email {
@@ -74,10 +78,32 @@ div.telefono,
 .email p {
   margin-left: 10px;
   margin-right: 20px;
+  font-size: 20px;
 }
 .boton-cv {
   margin: 0 auto;
   margin-top: 10px;
   font-weight: bold;
   padding: 20px;
+}
+
+.texto-copiado {
+  position: absolute;
+  background-color: #222;
+  color: #eae1df;
+  padding: 4px 8px;
+  border-radius: 5px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.texto-copiado-email {
+  position: absolute;
+  background-color: #222;
+  color: #eae1df;
+  padding: 4px 8px;
+  border-radius: 5px;
+  left: 42%;
+  top: 50%;
+  transform: translateY(-50%);
 }

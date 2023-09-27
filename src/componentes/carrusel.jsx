@@ -44,10 +44,18 @@ function Carrusel() {
             margin: 0 auto;
             margin-bottom: 50px;
           }
+
+          .carousel .control-prev.control-arrow:before {
+            border-right: 8px solid #222;
+          }
+
+          .carousel .control-next.control-arrow:before {
+            border-left: 8px solid #222;           
+          }
         `}
       </style>
       <Carousel
-        showArrows={false}
+        showArrows={true}
         showThumbs={false}
         autoPlay={true}
         infiniteLoop={true}

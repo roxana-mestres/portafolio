@@ -17,6 +17,7 @@ function ProyectoTexto() {
         <div className="pastillas">CSS</div>
         <div className="pastillas">JavaScript</div>
       </div>
+      <div className="linea"></div>
     </>
   );
 }

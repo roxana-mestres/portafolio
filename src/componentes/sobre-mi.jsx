@@ -24,7 +24,8 @@ function SobreMi() {
             consequat eros in tellus iaculis, at fringilla libero feugiat. Sed
             volutpat nec elit nec hendrerit. Integer id sem eget justo viverra
             rhoncus. Ut eu tortor id ligula dictum dictum. Integer id sem eget
-            justo viverra rhoncus. Ut eu tortor id ligula dictum dictum.
+            justo viverra rhoncus. Ut eu tortor id ligula dictum dictum. Sed
+            vestibulum ex vel ligula egestas, vel blandit ipsum volutpat.
           </p>
         </div>
       </div>
