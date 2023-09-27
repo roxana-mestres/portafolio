@@ -1,11 +1,8 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import lexigramaUno from "../assets/lexigrama-uno.svg";
-import lexigramaDos from "../assets/lexigrama-dos.svg";
-import lexigramaTres from "../assets/lexigrama-tres.svg";
-import lexigramaCuatro from "../assets/lexigrama-cuatro.svg";
+import PropTypes from "prop-types";
 
-function Carrusel() {
+function Carrusel({ imagenes }) {
   const customDotStyles = {
     width: "10px",
     height: "10px",
@@ -14,7 +11,7 @@ function Carrusel() {
   };
 
   return (
-    <div>
+    <div className="espacio">
       <style>
         {`
           ul.control-dots {
@@ -82,25 +79,22 @@ function Carrusel() {
           );
         }}
       >
-        <div>
-          <img className={`imagen`} src={lexigramaUno} alt="imagen proyecto" />
-        </div>
-        <div>
-          <img className={`imagen`} src={lexigramaDos} alt="imagen proyecto" />
-        </div>
-        <div>
-          <img className={`imagen`} src={lexigramaTres} alt="imagen proyecto" />
-        </div>
-        <div>
-          <img
-            className={`imagen`}
-            src={lexigramaCuatro}
-            alt="imagen proyecto"
-          />
-        </div>
+        {imagenes.map((imagen, index) => (
+          <div key={index}>
+            <img
+              className={`imagen`}
+              src={imagen}
+              alt={`Imagen proyecto ${index + 1}`}
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   );
 }
+
+Carrusel.propTypes = {
+  imagenes: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Carrusel;

@@ -1,24 +1,32 @@
 import estilosProyectos from "../estilos/estilos-proyectos.module.css";
-function ProyectoTexto() {
+import PropTypes from "prop-types";
+
+function Proyecto({ titulo, descripcion, texto, tecnologias, mostrarLinea }) {
   return (
     <>
       <div className={estilosProyectos["proyecto-texto"]}>
-        <h3>Página web para empresa Lexigrama</h3>
-        <h4>Prestación de servicios editoriales.</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis
-          facilis iste ut quis, ipsum nisi rem ratione officiis vitae eum nihil
-          molestias harum accusamus dolorum aspernatur aliquam quos hic
-          necessitatibus laudantium ab! Aspernatur saepe deserunt corporis
-          nihil, ab illum soluta cumque hic optio, perspiciatis modi quod
-          tenetur alias exercitationem ex nemo!
-        </p>
-        <div className={`${estilosProyectos["pastillas"]} pastillas`}>HTML</div>
-        <div className="pastillas">CSS</div>
-        <div className="pastillas">JavaScript</div>
+        <h3>{titulo}</h3>
+        <h4>{descripcion}</h4>
+        <p className={estilosProyectos["texto"]}>{texto}</p>
+        <div>
+          {tecnologias.map((tecnologia, index) => (
+            <div key={index} className="pastillas">
+              {tecnologia}
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="linea"></div>
+      {mostrarLinea && <div className="linea"></div>}
     </>
   );
 }
-export default ProyectoTexto;
+
+Proyecto.propTypes = {
+  titulo: PropTypes.string.isRequired,
+  descripcion: PropTypes.string.isRequired,
+  texto: PropTypes.string.isRequired,
+  tecnologias: PropTypes.arrayOf(PropTypes.string).isRequired,
+  mostrarLinea: PropTypes.bool,
+};
+
+export default Proyecto;

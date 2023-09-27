@@ -6,7 +6,6 @@
 p {
   line-height: 35px;
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 div.proyecto-texto {
@@ -18,5 +17,9 @@ div.proyecto-texto {
 }
 .proyecto-texto h3,
 h4 {
+  margin-bottom: 20px;
+}
+
+.texto {
   margin-bottom: 20px;
 }

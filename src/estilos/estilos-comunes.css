@@ -143,3 +143,7 @@ div.puntos {
   height: 3px;
   background-color: #222;
 }
+
+.espacio {
+  margin-top: 50px;
+}

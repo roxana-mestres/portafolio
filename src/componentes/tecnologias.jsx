@@ -4,7 +4,7 @@ function Tecnologias() {
     <>
       <div className="bordes margenes-contenedor">
         <h1 className={estilosTecnologia["titulo"]}>Tecnologías</h1>
-        <h3>Frontend:</h3>
+        <h3 className={estilosTecnologia["subtitulo"]}>Frontend:</h3>
         <div className="contenedor-pastillas">
           <div className="pastillas">HTML</div>
           <div className="pastillas">CSS</div>
@@ -12,21 +12,23 @@ function Tecnologias() {
           <div className="pastillas">Fundamentos UX/UI</div>
           <div className="pastillas">Figma</div>
         </div>
-        <h3>Backend:</h3>
+        <h3 className={estilosTecnologia["subtitulo"]}>Backend:</h3>
         <div className="contenedor-pastillas">
           <div className="pastillas">Node.js</div>
           <div className="pastillas">Express</div>
           <div className="pastillas">MongoDB</div>
           <div className="pastillas">EJS</div>
         </div>
-        <h3>Conocimientos básicos:</h3>
+        <h3 className={estilosTecnologia["subtitulo"]}>
+          Conocimientos básicos:
+        </h3>
         <div className="contenedor-pastillas">
           <div className="pastillas">React.js</div>
           <div className="pastillas">WordPress</div>
           <div className="pastillas">Adobe InDesign</div>
           <div className="pastillas">Adobe Illustrator</div>
         </div>
-        <h3>Otros:</h3>
+        <h3 className={estilosTecnologia["subtitulo"]}>Otros:</h3>
         <div className={`${estilosTecnologia["espacio"]} contenedor-pastillas`}>
           <div className="pastillas">Git</div>
           <div className="pastillas">GitHub</div>
