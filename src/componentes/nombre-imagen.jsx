@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import estilosNombreImagen from "../estilos/estilos-nombre-imagen.module.css";
+
 function NombreImagen() {
   const [fechaActual, setFechaActual] = useState("");
-  const [emailTextoCopiado, setEmailTextoCopiado] = useState("");
-  const [telefonoTextoCopiado, setTelefonoTextoCopiado] = useState("");
 
   useEffect(() => {
     const formatearFecha = () => {
@@ -22,11 +21,13 @@ function NombreImagen() {
     formatearFecha();
   }, []);
 
-  const copiarTexto = (texto, setTextoCopiado) => {
+  const copiarTexto = (texto, botonId) => {
     navigator.clipboard.writeText(texto).then(() => {
-      setTextoCopiado("Texto copiado");
+      const botonCopiar = document.getElementById(botonId);
+      botonCopiar.classList.add(estilosNombreImagen["clic"]);
+
       setTimeout(() => {
-        setTextoCopiado("");
+        botonCopiar.classList.remove(estilosNombreImagen["clic"]);
       }, 2000);
     });
   };
@@ -57,60 +58,37 @@ function NombreImagen() {
         </div>
         <div className={estilosNombreImagen["contacto"]}>
           <div className={estilosNombreImagen["email"]}>
-            <span className="material-symbols-outlined">mail</span>
-            <p>roxana.mestres@gmail.com</p>
             <span
               className="material-symbols-outlined"
               style={{ cursor: "pointer" }}
+            >
+              mail
+            </span>
+            <p>roxana.mestres@gmail.com</p>
+            <span
+              id="boton-copiar-email"
+              className={`material-symbols-outlined ${estilosNombreImagen["copiar"]}`}
+              style={{ cursor: "pointer" }}
               onClick={() =>
-                copiarTexto("roxana.mestres@gmail.com", setEmailTextoCopiado)
+                copiarTexto("roxana.mestres@gmail.com", "boton-copiar-email")
               }
             >
               content_copy
             </span>
-            {emailTextoCopiado && (
-              <p
-                style={{
-                  backgroundColor: "#222",
-                  color: "#EAE1DF",
-                  display: "inline-block",
-                  padding: "4px 8px",
-                  marginLeft: "8px",
-                  borderRadius: "5px",
-                }}
-                className={estilosNombreImagen["texto-copiado-email"]}
-              >
-                {emailTextoCopiado}
-              </p>
-            )}
           </div>
           <div className={estilosNombreImagen["telefono"]}>
             <span className="material-symbols-outlined">call</span>
             <p>+34 682 646 818</p>
             <span
+              id="boton-copiar-telefono"
               className="material-symbols-outlined"
               style={{ cursor: "pointer" }}
               onClick={() =>
-                copiarTexto("+34 682 646 818", setTelefonoTextoCopiado)
+                copiarTexto("+34 682 646 818", "boton-copiar-telefono")
               }
             >
               content_copy
             </span>
-            {telefonoTextoCopiado && (
-              <p
-                style={{
-                  backgroundColor: "#222",
-                  color: "#EAE1DF",
-                  display: "inline-block",
-                  padding: "4px 8px",
-                  marginLeft: "8px",
-                  borderRadius: "5px",
-                }}
-                className={estilosNombreImagen["texto-copiado"]}
-              >
-                {telefonoTextoCopiado}
-              </p>
-            )}
           </div>
         </div>
       </div>

@@ -17,3 +17,19 @@
 .columna {
   flex: 1;
 }
+.columna h1 {
+  padding-bottom: 20px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1024px) {
+  .contenedor-columna {
+    flex-direction: column;
+    margin: 0 40px;
+  }
+  .columna p {
+    padding-bottom: 18px;
+    line-height: 30px;
+    text-align: left;
+  }
+}

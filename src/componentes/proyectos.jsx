@@ -1,5 +1,5 @@
 import estilosProyectos from "../estilos/estilos-proyectos.module.css";
-import Proyecto from "./proyecto-texto";
+import ProyectoTexto from "./proyecto-texto";
 import Carrusel from "./carrusel";
 import proyectoUnoConfig from "./proyectos/proyectoUno";
 import proyectoDosConfig from "./proyectos/proyectoDos";
@@ -12,7 +12,7 @@ function Proyectos() {
     <div className={`margenes-contenedor bordes`}>
       <h1 className={estilosProyectos["titulo"]}>Proyectos</h1>
       <Carrusel imagenes={imagenes} />{" "}
-      <Proyecto
+      <ProyectoTexto
         titulo={titulo}
         descripcion={descripcion}
         texto={texto}
@@ -20,7 +20,7 @@ function Proyectos() {
         mostrarLinea={true}
       />{" "}
       <Carrusel imagenes={proyectoDosConfig.imagenes} />
-      <Proyecto
+      <ProyectoTexto
         titulo={proyectoDosConfig.titulo}
         descripcion={proyectoDosConfig.descripcion}
         texto={proyectoDosConfig.texto}
