@@ -2,6 +2,10 @@ import notasUno from "../../assets/notas-uno.svg";
 import notasDos from "../../assets/notas-dos.svg";
 import notasTres from "../../assets/notas-tres.svg";
 
+import notasUnoMovil from "../../assets/imagen-notas-movil-uno.svg";
+import notasDosMovil from "../../assets/imagen-notas-movil-dos.svg";
+import notasTresMovil from "../../assets/imagen-notas-movil-tres.svg";
+
 const proyectoDosConfig = {
   titulo: "Aplicación de notas",
   descripcion: "Aplicación CRUD",
@@ -18,7 +22,10 @@ const proyectoDosConfig = {
     "Google OAuth 2.0",
     "Passport",
   ],
-  imagenes: [notasUno, notasDos, notasTres],
+  imagenes: {
+    escritorio: [notasUno, notasDos, notasTres],
+    movil: [notasUnoMovil, notasDosMovil, notasTresMovil],
+  },
 };
 
 export default proyectoDosConfig;
