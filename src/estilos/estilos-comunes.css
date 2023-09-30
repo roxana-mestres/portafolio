@@ -8,6 +8,9 @@
   font-weight: 300;
   color: #222;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
@@ -107,10 +110,12 @@ div.puntos {
   margin-right: 40px;
   height: 100px;
   border: 3px solid #222;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .bordes {
   border-right: 3px solid #222;
   border-left: 3px solid #222;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .margenes-contenedor {
   width: calc(100vw - 80px);
@@ -122,9 +127,8 @@ div.puntos {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: flex-start;
-  margin-left: 40px;
+  margin-left: 20px;
 }
-
 .pastillas {
   display: inline-block;
   letter-spacing: 1px;
@@ -138,17 +142,15 @@ div.puntos {
   background-color: #222;
   color: #eae1df;
 }
-
 .linea {
   width: 100%;
   height: 3px;
   background-color: #222;
+  border-top: 3px solid #222;
 }
-
 .espacio {
   margin-top: 50px;
 }
-
 /*RESPONSIVE*/
 @media screen and (max-width: 1024px) {
   nav ul {
@@ -167,9 +169,9 @@ div.puntos {
     border: 3px solid #222;
     font-weight: bold;
     border-radius: 10px;
-    width: 195px;
+    width: 203px;
     height: auto;
-    padding: 3px 0;
+    padding: 5px 0;
     top: 8%;
     right: 90px;
     transition: max-height 0.3s ease;

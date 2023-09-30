@@ -11,7 +11,7 @@ function Proyectos() {
 
   return (
     <div className={`margenes-contenedor bordes`}>
-      <h1 className={estilosProyectos["titulo"]}>Proyectos</h1>
+      <h1 id="proyectos" className={estilosProyectos["titulo"]}>Proyectos</h1>
       {tamanoMediaQuery && (
         <>
           <Carrusel imagenes={proyectoUnoConfig.imagenes.escritorio} />

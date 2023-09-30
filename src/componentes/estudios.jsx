@@ -4,7 +4,7 @@ function Estudios() {
     <>
       <div className={estilosEstudios["div-estudios"]}>
         <div className={estilosEstudios["div-titulo"]}>
-          <h1>Estudios</h1>
+          <h1 id="estudios">Estudios</h1>
           <button className={`${estilosEstudios["boton"]} boton`}>
             Currículum
           </button>

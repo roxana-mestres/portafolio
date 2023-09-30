@@ -5,7 +5,7 @@ function SobreMi() {
     <>
       <div className={estilosSobreMi["contenedor-columna"]}>
         <div className={estilosSobreMi["columna"]}>
-          <h1>Sobre mí</h1>
+          <h1 id="sobre-mi">Sobre mí</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
             arcu nec odio hendrerit fringilla. Sed vestibulum ex vel ligula

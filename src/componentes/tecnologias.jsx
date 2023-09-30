@@ -3,7 +3,7 @@ function Tecnologias() {
   return (
     <>
       <div className="bordes margenes-contenedor">
-        <h1 className={estilosTecnologia["titulo"]}>Tecnologías</h1>
+        <h1 id="tecnologias" className={estilosTecnologia["titulo"]}>Tecnologías</h1>
         <h3 className={estilosTecnologia["subtitulo"]}>Frontend:</h3>
         <div className="contenedor-pastillas">
           <div className="pastillas">HTML</div>
