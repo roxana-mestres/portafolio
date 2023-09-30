@@ -64,7 +64,16 @@ function NombreImagen() {
             >
               mail
             </span>
-            <p>roxana.mestres@gmail.com</p>
+            <p className={estilosNombreImagen["texto-email"]}>
+              <span
+                id="email-text"
+                onClick={() =>
+                  copiarTexto("roxana.mestres@gmail.com", "boton-copiar-email")
+                }
+              >
+                roxana.mestres@gmail.com
+              </span>
+            </p>
             <span
               id="boton-copiar-email"
               className={`material-symbols-outlined ${estilosNombreImagen["copiar"]}`}
@@ -76,9 +85,19 @@ function NombreImagen() {
               content_copy
             </span>
           </div>
+
           <div className={estilosNombreImagen["telefono"]}>
             <span className="material-symbols-outlined">call</span>
-            <p>+34 682 646 818</p>
+            <p className={estilosNombreImagen["texto-telefono"]}>
+              <span
+                id="telefono-text"
+                onClick={() =>
+                  copiarTexto("+34 682 646 818", "boton-copiar-telefono")
+                }
+              >
+                +34 682 646 818
+              </span>
+            </p>
             <span
               id="boton-copiar-telefono"
               className="material-symbols-outlined"
