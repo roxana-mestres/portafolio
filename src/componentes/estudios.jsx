@@ -1,48 +1,111 @@
+import PropTypes from "prop-types";
 import estilosEstudios from "../estilos/estilos-estudios.module.css";
-function Estudios() {
+
+function Estudios({ idioma }) {
+  // Define objetos con las traducciones en diferentes idiomas
+  const traducciones = {
+    es: {
+      titulo: "Estudios",
+      boton: "Currículum",
+      estudios: [
+        {
+          fecha: "2022 - 2023",
+          titulo: "CEI: ESCUELA DE DISEÑO Y MARKETING",
+          subtitulo:
+            "Máster avanzado en marketing digital, diseño y desarrollo web",
+          cursos: [
+            "Curso de Copywriting",
+            "Curso en Adobe InDesign e Illustrator",
+            "Curso en Corrección Profesional",
+          ],
+        },
+        {
+          fecha: "2018",
+          titulo: "Universidad Pontificia Católica de Chile",
+          subtitulo: "Diplomado en Ediciones y Publicaciones",
+          cursos: ["Certificate of Proficiency in English (C2)"],
+        },
+        {
+          fecha: "2017 - 2018",
+          titulo: "Universidad Autónoma de Barcelona",
+          subtitulo: "Máster en Traducción Audiovisual",
+          cursos: ["Certificate in Advanced English"],
+        },
+        {
+          fecha: "2012 - 2016",
+          titulo: "Universidad de Salamanca",
+          subtitulo: "Grado en Estudios Ingleses (Filología Inglesa)",
+          cursos: ["First Certificate in English"],
+        },
+      ],
+    },
+    en: {
+      titulo: "Education",
+      boton: "Resume",
+      estudios: [
+        {
+          fecha: "2022 - 2023",
+          titulo: "CEI: SCHOOL OF DESIGN AND MARKETING",
+          subtitulo:
+            "Advanced Master in Digital Marketing, Design, and Web Development",
+          cursos: [
+            "Copywriting Course",
+            "Adobe InDesign and Illustrator Course",
+            "Professional Correction Course",
+          ],
+        },
+        {
+          fecha: "2018",
+          titulo: "Pontifical Catholic University of Chile",
+          subtitulo: "Diploma in Publishing and Publications",
+          cursos: ["Certificate of Proficiency in English (C2)"],
+        },
+        {
+          fecha: "2017 - 2018",
+          titulo: "Autonomous University of Barcelona",
+          subtitulo: "Master's in Audiovisual Translation",
+          cursos: ["Certificate in Advanced English"],
+        },
+        {
+          fecha: "2012 - 2016",
+          titulo: "University of Salamanca",
+          subtitulo: "Bachelor's Degree in English Studies (English Philology)",
+          cursos: ["First Certificate in English"],
+        },
+      ],
+    },
+  };
+
   return (
     <>
       <div className={estilosEstudios["div-estudios"]}>
         <div className={estilosEstudios["div-titulo"]}>
-          <h1 id="estudios">Estudios</h1>
+          <h1 id="estudios">{traducciones[idioma].titulo}</h1>
           <button className={`${estilosEstudios["boton"]} boton`}>
-            Currículum
+            {traducciones[idioma].boton}
           </button>
         </div>
         <div className={estilosEstudios["texto-estudios"]}>
-          <h4 className={estilosEstudios["h4"]}>
-            2022 - 2023 CEI: ESCUELA DE DISEÑO Y MARKETING, Máster avanzado en
-            marketing digital, diseño y desarrollo web
-          </h4>
-          <ul>
-            <li>Curso de Copywriting</li>
-            <li>Curso en Adobe InDesign e Illustrator</li>
-            <li>Curso en Corrección Profesional</li>
-          </ul>
-          <h4 className={estilosEstudios["h4"]}>
-            2018 Universidad Pontificia Católica de Chile, Diplomado en
-            Ediciones y Publicaciones
-          </h4>
-          <ul>
-            <li>Certificate of Proficiency in English (C2)</li>
-          </ul>
-          <h4 className={estilosEstudios["h4"]}>
-            2017 - 2018 Universidad Autónoma de Barcelona, Máster en Traducción
-            Audiovisual
-          </h4>
-          <ul>
-            <li>Certificate in Advanced English</li>
-          </ul>
-          <h4 className={estilosEstudios["h4"]}>
-            2012 - 2016 Universidad de Salamanca, Grado en Estudios Ingleses
-            (Filología Inglesa)
-          </h4>
-          <ul>
-            <li>First Certificate in English</li>
-          </ul>
+          {traducciones[idioma].estudios.map((estudio, index) => (
+            <div key={index}>
+              <h4 className={estilosEstudios["h4"]}>
+                {estudio.fecha} {estudio.titulo} <br /> {estudio.subtitulo}
+              </h4>
+              <ul>
+                {estudio.cursos.map((curso, cursoIndex) => (
+                  <li key={cursoIndex}>{curso}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </>
   );
 }
+
+Estudios.propTypes = {
+  idioma: PropTypes.string.isRequired,
+};
+
 export default Estudios;

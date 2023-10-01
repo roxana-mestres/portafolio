@@ -59,7 +59,7 @@ div.titulo {
 }
 div.titulo h1,
 div.titulo h2 {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 div.imagen {
   width: 50%;
@@ -131,6 +131,12 @@ div.telefono,
     border-radius: 50%;
     margin-bottom: 30px;
   }
+  .imagen {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+  }
   div.fecha-ubicacion {
     flex-direction: column;
     justify-content: center;
@@ -152,6 +158,12 @@ div.telefono,
   }
   div.titulo {
     border: none;
+    height: auto;
+  }
+
+  div.titulo h1,
+  div.titulo h2 {
+    margin-bottom: 20px;
   }
   div.contacto {
     flex-direction: column;

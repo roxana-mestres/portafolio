@@ -32,9 +32,10 @@ div.github {
   background-image: url(../assets/github-icono.svg);
   background-repeat: no-repeat;
   background-size: 50%;
-  width: 7vw;
+  width: 80px;
   height: 50px;
   margin-left: 20px;
+  margin-top: 3px;
 }
 .proyecto-texto h3,
 h4 {

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 import estilosNombreImagen from "../estilos/estilos-nombre-imagen.module.css";
 
-function NombreImagen() {
+function NombreImagen({ idioma }) {
   const [fechaActual, setFechaActual] = useState("");
 
   useEffect(() => {
@@ -14,12 +15,12 @@ function NombreImagen() {
       };
       const fecha = new Date();
       const fechaFormateada = fecha
-        .toLocaleDateString("es-ES", opcionesFecha)
+        .toLocaleDateString(idioma === "es" ? "es-ES" : "en-US", opcionesFecha)
         .replace(",", "");
       setFechaActual(fechaFormateada);
     };
     formatearFecha();
-  }, []);
+  }, [idioma]);
 
   const copiarTexto = (texto, botonId) => {
     navigator.clipboard.writeText(texto).then(() => {
@@ -32,6 +33,23 @@ function NombreImagen() {
     });
   };
 
+  // Define las traducciones para los elementos en diferentes idiomas
+  const traducciones = {
+    es: {
+      ubicacion: "Madrid, España",
+      subtitulo: "Diseño y desarrollo web",
+      botonCV: "Currículum",
+    },
+    en: {
+      ubicacion: "Madrid, Spain",
+      subtitulo: "Web Design & Development",
+      botonCV: "Resume",
+    },
+  };
+
+  // Usa el idioma para obtener las traducciones correctas
+  const traduccionActual = traducciones[idioma];
+
   return (
     <>
       <div className={`${estilosNombreImagen["contenedor-general"]}`}>
@@ -39,17 +57,17 @@ function NombreImagen() {
           <div className={estilosNombreImagen["fecha"]}>{fechaActual}</div>
           <div className={estilosNombreImagen["ubicacion"]}>
             <span className="material-symbols-outlined">location_on</span>
-            <p>Madrid, España</p>
+            <p>{traduccionActual.ubicacion}</p>
           </div>
         </div>
         <div className={estilosNombreImagen["titulo-imagen"]}>
           <div className={estilosNombreImagen["titulo"]}>
             <h1>Roxana Mestres</h1>
             <h2 className={`${estilosNombreImagen["titulo"]}`}>
-              Diseño y desarrollo web
+              {traduccionActual.subtitulo}
             </h2>
             <button className={"boton " + estilosNombreImagen["boton-cv"]}>
-              Currículum
+              {traduccionActual.botonCV}
             </button>
           </div>
           <div className={estilosNombreImagen["imagen"]}>
@@ -114,5 +132,9 @@ function NombreImagen() {
     </>
   );
 }
+
+NombreImagen.propTypes = {
+  idioma: PropTypes.string.isRequired,
+};
 
 export default NombreImagen;
