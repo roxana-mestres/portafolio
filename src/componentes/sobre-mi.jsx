@@ -7,25 +7,26 @@ function SobreMi() {
         <div className={estilosSobreMi["columna"]}>
           <h1 id="sobre-mi">Sobre mí</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla non
-            arcu nec odio hendrerit fringilla. Sed vestibulum ex vel ligula
-            egestas, vel blandit ipsum volutpat.Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nulla non arcu nec odio hendrerit
-            fringilla. Sed vestibulum ex vel ligula egestas, vel blandit ipsum
-            volutpat.
+            ¡Hola! Soy Roxana, una filóloga inglesa que ha encontrado una nueva
+            pasión en el diseño y la creación de páginas web. Hace
+            aproximadamente un año, mi interés por la programación comenzó
+            cuando empecé a aprender HTML y CSS. Esto me llevó a tomar la
+            decisión de profundizar en esta disciplina, inscribiéndome en el
+            máster de marketing y desarrollo web en la Escuela de Diseño CEI de
+            Madrid, donde adquirí conocimientos tanto en el frontend como en el
+            backend.
           </p>
         </div>
         <div className={estilosSobreMi["columna"]}>
           <p>
-            Fusce condimentum tortor id est venenatis, ut elementum tellus
-            dapibus. Duis consequat eros in tellus iaculis, at fringilla libero
-            feugiat. Sed volutpat nec elit nec hendrerit. Integer id sem eget
-            justo viverra rhoncus. Ut eu tortor id ligula dictum dictum. Duis
-            consequat eros in tellus iaculis, at fringilla libero feugiat. Sed
-            volutpat nec elit nec hendrerit. Integer id sem eget justo viverra
-            rhoncus. Ut eu tortor id ligula dictum dictum. Integer id sem eget
-            justo viverra rhoncus. Ut eu tortor id ligula dictum dictum. Sed
-            vestibulum ex vel ligula egestas, vel blandit ipsum volutpat.
+            Lo que más me atrae del desarrollo web es la amplia variedad de
+            tecnologías con las que se trabaja. Disfruto de esta profesión
+            porque me impulsa a mantener una actitud proactiva y una curiosidad
+            constante por las nuevas tecnologías que surgen constantemente. Para
+            mí, el desarrollo web representa una emocionante oportunidad de
+            crecimiento y evolución en el ámbito laboral, donde puedo aplicar de
+            manera creativa y técnica mis habilidades lingüísticas y mi
+            experiencia previa.
           </p>
         </div>
       </div>

@@ -10,7 +10,7 @@ const proyectoDosConfig = {
   titulo: "Aplicación de notas",
   descripcion: "Aplicación CRUD",
   texto:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis facilis iste ut quis, ipsum nisi rem ratione officiis vitae eum nihil molestias harum accusamus dolorum aspernatur aliquam quos hic necessitatibus laudantium ab! Aspernatur saepe deserunt corporis nihil, ab illum soluta cumque hic optio, perspiciatis modi quod tenetur alias exercitationem ex nemo!",
+    "La aplicación de notas es un proyecto que desarrollé durante el módulo de desarrollo fullstack en la escuela CEI. Mi objetivo era añadir un toque personalizado a un proyecto que a menudo se presenta de manera bastante genérica. En cuanto a la creación de la interfaz, opté por utilizar JavaScript puro y EJS. En lo que respecta a la autenticación, decidí incorporar Google OAuth 2.0 y Passport.",
   tecnologias: [
     "HTML",
     "CSS",
@@ -25,6 +25,11 @@ const proyectoDosConfig = {
   imagenes: {
     escritorio: [notasUno, notasDos, notasTres],
     movil: [notasUnoMovil, notasDosMovil, notasTresMovil],
+  },
+  enlaces: {
+    // Añade las propiedades de enlaces aquí
+    paginaWeb: "https://app-notas.onrender.com/",
+    github: "https://github.com/usuario/proyecto2",
   },
 };
 

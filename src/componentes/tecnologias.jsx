@@ -3,13 +3,15 @@ function Tecnologias() {
   return (
     <>
       <div className="bordes margenes-contenedor">
-        <h1 id="tecnologias" className={estilosTecnologia["titulo"]}>Tecnologías</h1>
+        <h1 id="tecnologias" className={estilosTecnologia["titulo"]}>
+          Tecnologías
+        </h1>
         <h3 className={estilosTecnologia["subtitulo"]}>Frontend:</h3>
         <div className="contenedor-pastillas">
           <div className="pastillas">HTML</div>
           <div className="pastillas">CSS</div>
           <div className="pastillas">JavaScript</div>
-          <div className="pastillas">Fundamentos UX/UI</div>
+          <div className="pastillas">UX/UI</div>
           <div className="pastillas">Figma</div>
         </div>
         <h3 className={estilosTecnologia["subtitulo"]}>Backend:</h3>

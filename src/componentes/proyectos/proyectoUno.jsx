@@ -12,7 +12,7 @@ const proyectoUnoConfig = {
   titulo: "Página web para empresa Lexigrama",
   descripcion: "Prestación de servicios editoriales.",
   texto:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis facilis iste ut quis, ipsum nisi rem ratione officiis vitae eum nihil molestias harum accusamus dolorum aspernatur aliquam quos hic necessitatibus laudantium ab! Aspernatur saepe deserunt corporis nihil, ab illum soluta cumque hic optio, perspiciatis modi quod tenetur alias exercitationem ex nemo!",
+    "Lexigrama es un proyecto personal, una página web desarrollada exclusivamente con HTML, CSS y JavaScript puro, sin utilizar bibliotecas como jQuery o Tailwind CSS. Además, incluye una base de datos SQL para gestionar suscripciones y formularios de contacto. Uno de los principales desafíos fue la creación de efectos especiales, como el efecto de máquina de escribir en la sección de la cabecera y la galería de reseñas.",
   tecnologias: ["HTML", "CSS", "JavaScript"],
   imagenes: {
     escritorio: [lexigramaUno, lexigramaDos, lexigramaTres, lexigramaCuatro],
@@ -22,6 +22,11 @@ const proyectoUnoConfig = {
       lexigramaTresMovil,
       lexigramaCuatroMovil,
     ],
+  },
+  enlaces: {
+    // Añade las propiedades de enlaces aquí
+    paginaWeb: "https://lexigrama.com/",
+    github: "https://github.com/usuario/proyecto1",
   },
 };
 

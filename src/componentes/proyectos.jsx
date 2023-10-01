@@ -11,7 +11,9 @@ function Proyectos() {
 
   return (
     <div className={`margenes-contenedor bordes`}>
-      <h1 id="proyectos" className={estilosProyectos["titulo"]}>Proyectos</h1>
+      <h1 id="proyectos" className={estilosProyectos["titulo"]}>
+        Proyectos
+      </h1>
       {tamanoMediaQuery && (
         <>
           <Carrusel imagenes={proyectoUnoConfig.imagenes.escritorio} />
@@ -21,6 +23,7 @@ function Proyectos() {
             texto={proyectoUnoConfig.texto}
             tecnologias={proyectoUnoConfig.tecnologias}
             mostrarLinea={true}
+            enlaces={proyectoUnoConfig.enlaces}
           />
           <Carrusel imagenes={proyectoDosConfig.imagenes.escritorio} />
           <ProyectoTexto
@@ -29,6 +32,7 @@ function Proyectos() {
             texto={proyectoDosConfig.texto}
             tecnologias={proyectoDosConfig.tecnologias}
             mostrarLinea={false}
+            enlaces={proyectoDosConfig.enlaces}
           />
         </>
       )}
@@ -42,6 +46,7 @@ function Proyectos() {
             texto={proyectoUnoConfig.texto}
             tecnologias={proyectoUnoConfig.tecnologias}
             mostrarLinea={true}
+            enlaces={proyectoUnoConfig.enlaces}
           />
           <Carrusel imagenes={proyectoDosConfig.imagenes.movil} />
           <ProyectoTexto
@@ -50,6 +55,7 @@ function Proyectos() {
             texto={proyectoDosConfig.texto}
             tecnologias={proyectoDosConfig.tecnologias}
             mostrarLinea={false}
+            enlaces={proyectoDosConfig.enlaces}
           />
         </>
       )}

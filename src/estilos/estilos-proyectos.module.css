@@ -16,6 +16,26 @@ div.proyecto-texto {
   padding-bottom: 50px;
   text-align: left;
 }
+div.enlace-titulo {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+div.contenedor-enlaces {
+  width: 20%;
+  height: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+div.github {
+  background-image: url(../assets/github-icono.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  width: 7vw;
+  height: 50px;
+  margin-left: 20px;
+}
 .proyecto-texto h3,
 h4 {
   margin-bottom: 20px;
@@ -28,5 +48,17 @@ h4 {
   p {
     text-align: left;
     line-height: 30px;
+  }
+  div.enlace-titulo {
+    flex-direction: column;
+  }
+  div.contenedor-enlaces {
+    margin-left: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  div.github {
+    width: 80px;
+    margin-top: 5px;
   }
 }
