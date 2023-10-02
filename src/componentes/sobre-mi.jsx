@@ -14,7 +14,7 @@ function SobreMi({ idioma }) {
     en: {
       titulo: "About Me",
       parrafo1:
-        "Hello! I'm Roxana, an English philologist who has discovered a newfound passion for web design and development. About a year ago, my journey into programming began as I delved into learning HTML and CSS. This journey led me to make the decision to pursue this field further, enrolling in the Master's program in Marketing and Web Development at the CEI Design School in Madrid. Here, I gained knowledge in both frontend and backend development.",
+        "Hi! My name is Roxana, an English philologist who has discovered a newfound passion for web design and development. About a year ago, my journey into programming began as I delved into learning HTML and CSS. This journey led me to make the decision to pursue this field further, enrolling in the Master's program in Marketing and Web Development at the CEI Design School in Madrid. Here, I gained knowledge in both frontend and backend development.",
       parrafo2:
         "What particularly excites me about web development is the extensive range of technologies that it involves. I find great satisfaction in this profession because it encourages me to maintain a proactive mindset and an insatiable curiosity for the ever-evolving world of new technologies. To me, web development represents an exhilarating opportunity for personal and professional growth, where I can creatively and technically apply my language skills and prior experience.",
     },

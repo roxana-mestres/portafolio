@@ -7,7 +7,6 @@ function Tecnologias({ idioma }) {
       titulo: "Tecnologías",
       frontend: "Frontend:",
       backend: "Backend:",
-      frameworks: "Frameworks:",
       conocimientos: "Conocimientos básicos:",
       otros: "Otros:",
     },
@@ -15,7 +14,6 @@ function Tecnologias({ idioma }) {
       titulo: "Technologies",
       frontend: "Frontend:",
       backend: "Backend:",
-      frameworks: "Frameworks:",
       conocimientos: "Basic knowledge:",
       otros: "Others:",
     },
@@ -23,16 +21,28 @@ function Tecnologias({ idioma }) {
 
   const tecnologias = {
     es: {
-      frontend: ["HTML", "CSS", "JavaScript", "Fundamentos UX/UI", "Figma"],
+      frontend: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Fundamentos UX/UI",
+        "Figma",
+        "React.js",
+      ],
       backend: ["Node.js", "Express", "MongoDB", "EJS"],
-      frameworks: ["React.js"],
       conocimientos: ["WordPress", "Adobe InDesign", "Adobe Illustrator"],
       otros: ["Git", "GitHub", "Inglés avanzado (C2)"],
     },
     en: {
-      frontend: ["HTML", "CSS", "JavaScript", "UX/UI Fundamentals", "Figma"],
+      frontend: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "UX/UI Fundamentals",
+        "Figma",
+        "React.js",
+      ],
       backend: ["Node.js", "Express", "MongoDB", "EJS"],
-      frameworks: ["React.js"],
       conocimientos: ["WordPress", "Adobe InDesign", "Adobe Illustrator"],
       otros: ["Git", "GitHub", "Advanced English (C2)"],
     },
@@ -53,10 +63,6 @@ function Tecnologias({ idioma }) {
         <Section
           titulo={traduccionActual.backend}
           items={tecnologias[idioma].backend}
-        />
-        <Section
-          titulo={traduccionActual.frameworks}
-          items={tecnologias[idioma].frameworks}
         />
         <Section
           titulo={traduccionActual.conocimientos}

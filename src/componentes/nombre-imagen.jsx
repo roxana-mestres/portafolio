@@ -94,7 +94,7 @@ function NombreImagen({ idioma }) {
             </p>
             <span
               id="boton-copiar-email"
-              className={`material-symbols-outlined ${estilosNombreImagen["copiar"]}`}
+              className={`material-symbols-outlined hundir ${estilosNombreImagen["copiar"]}`}
               style={{ cursor: "pointer" }}
               onClick={() =>
                 copiarTexto("roxana.mestres@gmail.com", "boton-copiar-email")
@@ -105,7 +105,7 @@ function NombreImagen({ idioma }) {
           </div>
 
           <div className={estilosNombreImagen["telefono"]}>
-            <span className="material-symbols-outlined">call</span>
+            <span className={`material-symbols-outlined`}>call</span>
             <p className={estilosNombreImagen["texto-telefono"]}>
               <span
                 id="telefono-text"
@@ -118,7 +118,7 @@ function NombreImagen({ idioma }) {
             </p>
             <span
               id="boton-copiar-telefono"
-              className="material-symbols-outlined"
+              className={`material-symbols-outlined hundir`}
               style={{ cursor: "pointer" }}
               onClick={() =>
                 copiarTexto("+34 682 646 818", "boton-copiar-telefono")

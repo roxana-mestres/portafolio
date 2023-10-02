@@ -12,8 +12,6 @@ div.ubicacion {
   padding: 20px;
 }
 
-.fecha:hover,
-.ubicacion p:hover,
 .texto-email span:hover,
 .texto-telefono span:hover {
   font-weight: bold;

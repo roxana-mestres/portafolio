@@ -31,7 +31,7 @@ function Navegacion({ idioma, cambiarIdioma }) {
       sobreMi: "about me",
       tecnologias: "technologies",
       proyectos: "projects",
-      estudios: "studies",
+      estudios: "education",
     },
   };
 

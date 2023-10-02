@@ -45,30 +45,30 @@ function Estudios({ idioma }) {
       estudios: [
         {
           fecha: "2022 - 2023",
-          titulo: "CEI: SCHOOL OF DESIGN AND MARKETING",
+          titulo: "CEI: ESCUELA DE DISEÑO Y MARKETING",
           subtitulo:
-            "Advanced Master in Digital Marketing, Design, and Web Development",
+            "Advanced Course in Digital Marketing, Design, and Web Development",
           cursos: [
             "Copywriting Course",
             "Adobe InDesign and Illustrator Course",
-            "Professional Correction Course",
+            "Professional Proofreading Course",
           ],
         },
         {
           fecha: "2018",
-          titulo: "Pontifical Catholic University of Chile",
+          titulo: "Universidad Pontificia Católica de Chile",
           subtitulo: "Diploma in Publishing and Publications",
           cursos: ["Certificate of Proficiency in English (C2)"],
         },
         {
           fecha: "2017 - 2018",
-          titulo: "Autonomous University of Barcelona",
+          titulo: "Universidad Autónoma de Barcelona",
           subtitulo: "Master's in Audiovisual Translation",
           cursos: ["Certificate in Advanced English"],
         },
         {
           fecha: "2012 - 2016",
-          titulo: "University of Salamanca",
+          titulo: "Universidad de Salamanca",
           subtitulo: "Bachelor's Degree in English Studies (English Philology)",
           cursos: ["First Certificate in English"],
         },

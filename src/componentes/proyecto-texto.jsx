@@ -22,7 +22,7 @@ function ProyectoTexto({
                 rel="noopener noreferrer"
               >
                 <span
-                  className="material-symbols-outlined"
+                  className="material-symbols-outlined hundir"
                   style={{ fontSize: "45px" }}
                 >
                   open_in_new
@@ -33,7 +33,7 @@ function ProyectoTexto({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className={estilosProyectos["github"]}></div>
+                <div className={`hundir ${estilosProyectos["github"]}`}></div>
               </a>
             </div>
           </div>
