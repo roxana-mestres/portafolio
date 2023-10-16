@@ -8,14 +8,16 @@ function Tecnologias({ idioma }) {
       frontend: "Frontend:",
       backend: "Backend:",
       conocimientos: "Conocimientos básicos:",
-      otros: "Otros:",
+      otros: "Otras tecnologías:",
+      idiomas: "Idiomas:",
     },
     en: {
       titulo: "Technologies",
       frontend: "Frontend:",
       backend: "Backend:",
       conocimientos: "Basic knowledge:",
-      otros: "Others:",
+      otros: "Other technologies:",
+      idiomas: "Languages:",
     },
   };
 
@@ -29,9 +31,10 @@ function Tecnologias({ idioma }) {
         "Figma",
         "React.js",
       ],
-      backend: ["Node.js", "Express", "MongoDB", "EJS"],
+      backend: ["Node.js", "Express", "MongoDB", "EJS", "mySQL"],
       conocimientos: ["WordPress", "Adobe InDesign", "Adobe Illustrator"],
-      otros: ["Git", "GitHub", "Inglés avanzado (C2)"],
+      otros: ["Git", "GitHub"],
+      idiomas: ["Inglés avanzado (C2)", "Español (nativo)"],
     },
     en: {
       frontend: [
@@ -44,7 +47,8 @@ function Tecnologias({ idioma }) {
       ],
       backend: ["Node.js", "Express", "MongoDB", "EJS"],
       conocimientos: ["WordPress", "Adobe InDesign", "Adobe Illustrator"],
-      otros: ["Git", "GitHub", "Advanced English (C2)"],
+      otros: ["Git", "GitHub"],
+      idiomas: ["English (C2)", "Spanish (native)"],
     },
   };
 
@@ -71,6 +75,10 @@ function Tecnologias({ idioma }) {
         <Section
           titulo={traduccionActual.otros}
           items={tecnologias[idioma].otros}
+        />
+        <Section
+          titulo={traduccionActual.idiomas}
+          items={tecnologias[idioma].idiomas}
         />
         <div className={estilosTecnologia["espacio"]}></div>
       </div>

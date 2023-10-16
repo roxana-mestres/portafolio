@@ -8,10 +8,11 @@ import notasTresMovil from "../../assets/imagen-notas-movil-tres.svg";
 
 const proyectoDosConfig = {
   es: {
-    titulo: "Aplicación de notas",
-    descripcion: "Aplicación CRUD",
+    titulo: "Aplicación de notas (CRUD)",
+    descripcion:
+      "La página está alojada en Render, por lo que la carga inicial puede tomar hasta 40 segundos.",
     texto:
-      "La aplicación de notas es un proyecto que desarrollé durante el módulo de desarrollo fullstack en la escuela CEI. Mi objetivo era añadir un toque personalizado a un proyecto que a menudo se presenta de manera bastante genérica. En cuanto a la creación de la interfaz, opté por utilizar JavaScript puro y EJS. En lo que respecta a la autenticación, decidí incorporar Google OAuth 2.0 y Passport.",
+      "La aplicación de notas es un proyecto que desarrollé durante el módulo de desarrollo fullstack en la escuela CEI. En cuanto a la creación de la interfaz, opté por utilizar JavaScript puro y EJS. En lo que respecta a la autenticación, decidí incorporar Google OAuth 2.0 y Passport.",
     tecnologias: [
       "HTML",
       "CSS",
@@ -29,14 +30,15 @@ const proyectoDosConfig = {
     },
     enlaces: {
       paginaWeb: "https://app-notas.onrender.com/",
-      github: "https://github.com/usuario/proyecto2",
+      github: "https://github.com/roxana-mestres/app-notas.git",
     },
   },
   en: {
-    titulo: "Notes Application",
-    descripcion: "Custom CRUD Application.",
+    titulo: "Notes Application (CRUD)",
+    descripcion:
+      "The page is hosted on Render, which means the initial load time can be up to 40 seconds.",
     texto:
-      "The notes application is a project I developed during the full-stack development module at CEI school. My goal was to add a personalized touch to a project that is often presented quite generically. Regarding the user interface, I chose to use pure JavaScript and EJS. As for authentication, I decided to incorporate Google OAuth 2.0 and Passport.",
+      "The notes application is a project I worked on during the full-stack development module at CEI school. For the user interface, I opted for pure JavaScript and EJS. When it comes to authentication, I integrated Google OAuth 2.0 and Passport.",
     tecnologias: [
       "HTML",
       "CSS",
@@ -54,7 +56,7 @@ const proyectoDosConfig = {
     },
     enlaces: {
       paginaWeb: "https://app-notes.onrender.com/",
-      github: "https://github.com/user/project2",
+      github: "https://github.com/roxana-mestres/app-notas.git",
     },
   },
 };

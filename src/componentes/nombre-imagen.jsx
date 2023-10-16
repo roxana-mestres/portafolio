@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import estilosNombreImagen from "../estilos/estilos-nombre-imagen.module.css";
+import DescargarCV from "./descargarCV";
 
 function NombreImagen({ idioma }) {
   const [fechaActual, setFechaActual] = useState("");
@@ -50,6 +51,11 @@ function NombreImagen({ idioma }) {
   // Usa el idioma para obtener las traducciones correctas
   const traduccionActual = traducciones[idioma];
 
+  const enlacePDFIngles =
+    "https://drive.google.com/file/d/1BSJYAMMYFtZKBSKDvj_G7v2b_5Vjk646/view?usp=sharing";
+  const enlacePDFEspanol =
+    "https://www.dropbox.com/scl/fi/8cek1pvgcn01pcbn9rcfn/CV-Roxana-Mestres.pdf?rlkey=1mz6nqanm02tcvo5j7o2vguhw&dl=0";
+
   return (
     <>
       <div className={`${estilosNombreImagen["contenedor-general"]}`}>
@@ -66,9 +72,13 @@ function NombreImagen({ idioma }) {
             <h2 className={`${estilosNombreImagen["titulo"]}`}>
               {traduccionActual.subtitulo}
             </h2>
-            <button className={"boton " + estilosNombreImagen["boton-cv"]}>
-              {traduccionActual.botonCV}
-            </button>
+            <DescargarCV
+              traduccion={traduccionActual.botonCV}
+              estilos={estilosNombreImagen["boton-cv"]}
+              enlacePDFIngles={enlacePDFIngles}
+              enlacePDFEspanol={enlacePDFEspanol}
+              idioma={idioma}
+            />
           </div>
           <div className={estilosNombreImagen["imagen"]}>
             <div className="imagen"></div>

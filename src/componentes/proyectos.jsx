@@ -23,7 +23,7 @@ function Proyectos({ idioma, proyectos }) {
       <h1 id="proyectos" className={estilosProyectos["titulo"]}>
         {tituloProyectos}
       </h1>
-      {proyectos.map((proyecto) => (
+      {proyectos.map((proyecto, index) => (
         <div key={proyecto.id}>
           {tamanoMediaQuery && (
             <>
@@ -33,7 +33,7 @@ function Proyectos({ idioma, proyectos }) {
                 descripcion={proyecto[idioma].descripcion}
                 texto={proyecto[idioma].texto}
                 tecnologias={proyecto[idioma].tecnologias}
-                mostrarLinea={true}
+                mostrarLinea={index === 0}
                 enlaces={proyecto[idioma].enlaces}
               />
             </>
@@ -47,7 +47,7 @@ function Proyectos({ idioma, proyectos }) {
                 descripcion={proyecto[idioma].descripcion}
                 texto={proyecto[idioma].texto}
                 tecnologias={proyecto[idioma].tecnologias}
-                mostrarLinea={true}
+                mostrarLinea={false}
                 enlaces={proyecto[idioma].enlaces}
               />
             </>

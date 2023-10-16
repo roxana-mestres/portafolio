@@ -7,9 +7,9 @@ function SobreMi({ idioma }) {
     es: {
       titulo: "Sobre mí",
       parrafo1:
-        "¡Hola! Soy Roxana, una filóloga inglesa que ha encontrado una nueva pasión en el diseño y la creación de páginas web. Hace aproximadamente un año, mi interés por la programación comenzó cuando empecé a aprender HTML y CSS. Esto me llevó a tomar la decisión de profundizar en esta disciplina, inscribiéndome en el máster de marketing y desarrollo web en la Escuela de Diseño CEI de Madrid, donde adquirí conocimientos tanto en el frontend como en el backend.",
+        "¡Hola! Mi nombre es Roxana, soy filóloga inglesa y he encontrado una nueva pasión en el diseño y la creación de páginas web. Mi interés por la programación comenzó, aproximadamente hace un año, al querer desarrollar una página web con WordPress, pues me fue imprescindible aprender algo de HTML y CSS. Cuanto más me adentraba en estas tecnologías, más quería seguir aprendiendo. Esto me llevó a tomar la decisión de profundizar en esta disciplina,",
       parrafo2:
-        "Lo que más me atrae del desarrollo web es la amplia variedad de tecnologías con las que se trabaja. Disfruto de esta profesión porque me impulsa a mantener una actitud proactiva y una curiosidad constante por las nuevas tecnologías que surgen constantemente. Para mí, el desarrollo web representa una emocionante oportunidad de crecimiento y evolución en el ámbito laboral, donde puedo aplicar de manera creativa y técnica mis habilidades lingüísticas y mi experiencia previa.",
+        "inscribiéndome en el máster de marketing y desarrollo web en la Escuela de Diseño CEI de Madrid, donde adquirí conocimientos tanto en el frontend como en el backend. Lo que más me atrae del desarrollo web es la amplia variedad de tecnologías con las que se trabaja. Disfruto de esta profesión porque me impulsa a mantener una actitud proactiva y una curiosidad por las nuevas tecnologías que surgen constantemente. Para mí, el desarrollo web representa una emocionante oportunidad de crecimiento y evolución en el ámbito laboral, donde puedo aplicar de manera creativa y técnica mi experiencia previa.",
     },
     en: {
       titulo: "About Me",

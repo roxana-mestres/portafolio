@@ -1,7 +1,12 @@
 import PropTypes from "prop-types";
 import estilosEstudios from "../estilos/estilos-estudios.module.css";
+import DescargarCV from "./descargarCV";
 
 function Estudios({ idioma }) {
+  const enlacePDFIngles =
+    "https://drive.google.com/file/d/1BSJYAMMYFtZKBSKDvj_G7v2b_5Vjk646/view?usp=sharing";
+  const enlacePDFEspanol =
+    "https://www.dropbox.com/scl/fi/8cek1pvgcn01pcbn9rcfn/CV-Roxana-Mestres.pdf?rlkey=1mz6nqanm02tcvo5j7o2vguhw&dl=0";
   // Define objetos con las traducciones en diferentes idiomas
   const traducciones = {
     es: {
@@ -81,9 +86,13 @@ function Estudios({ idioma }) {
       <div className={estilosEstudios["div-estudios"]}>
         <div className={estilosEstudios["div-titulo"]}>
           <h1 id="estudios">{traducciones[idioma].titulo}</h1>
-          <button className={`${estilosEstudios["boton"]} boton`}>
-            {traducciones[idioma].boton}
-          </button>
+          <DescargarCV
+            traduccion={traducciones[idioma].boton}
+            estilos={estilosEstudios["boton"]}
+            enlacePDFIngles={enlacePDFIngles}
+            enlacePDFEspanol={enlacePDFEspanol}
+            idioma={idioma}
+          />
         </div>
         <div className={estilosEstudios["texto-estudios"]}>
           {traducciones[idioma].estudios.map((estudio, index) => (
