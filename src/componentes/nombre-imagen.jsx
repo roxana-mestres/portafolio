@@ -51,10 +51,8 @@ function NombreImagen({ idioma }) {
   // Usa el idioma para obtener las traducciones correctas
   const traduccionActual = traducciones[idioma];
 
-  const enlacePDFIngles =
-    "https://drive.google.com/file/d/1BSJYAMMYFtZKBSKDvj_G7v2b_5Vjk646/view?usp=sharing";
-  const enlacePDFEspanol =
-    "https://www.dropbox.com/scl/fi/8cek1pvgcn01pcbn9rcfn/CV-Roxana-Mestres.pdf?rlkey=1mz6nqanm02tcvo5j7o2vguhw&dl=0";
+  const enlacePDFIngles = "/pdfs/CV_Roxana_Mestres_EN.pdf";
+  const enlacePDFEspanol = "/pdfs/CV_Roxana_Mestres_ES.pdf";
 
   return (
     <>

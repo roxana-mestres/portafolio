@@ -183,4 +183,9 @@ div.telefono,
   div.titulo h2 {
     margin-bottom: 0px;
   }
+  div.contenedor-general {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100vw - 30px);
+  }
 }

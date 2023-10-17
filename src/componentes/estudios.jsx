@@ -3,10 +3,8 @@ import estilosEstudios from "../estilos/estilos-estudios.module.css";
 import DescargarCV from "./descargarCV";
 
 function Estudios({ idioma }) {
-  const enlacePDFIngles =
-    "https://drive.google.com/file/d/1BSJYAMMYFtZKBSKDvj_G7v2b_5Vjk646/view?usp=sharing";
-  const enlacePDFEspanol =
-    "https://www.dropbox.com/scl/fi/8cek1pvgcn01pcbn9rcfn/CV-Roxana-Mestres.pdf?rlkey=1mz6nqanm02tcvo5j7o2vguhw&dl=0";
+  const enlacePDFIngles = "/pdfs/CV_Roxana_Mestres_EN.pdf";
+  const enlacePDFEspanol = "/pdfs/CV_Roxana_Mestres_ES.pdf";
   // Define objetos con las traducciones en diferentes idiomas
   const traducciones = {
     es: {

@@ -198,6 +198,16 @@ div.puntos {
     background-color: #222;
     color: #eae1df;
   }
+  div.puntos {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100vw - 30px);
+  }
+  .margenes-contenedor {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(100vw - 30px);
+  }
 }
 @media screen and (min-width: 1025px) {
   .boton-menu {
