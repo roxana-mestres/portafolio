@@ -43,7 +43,7 @@ function NombreImagen({ idioma }) {
     },
     en: {
       ubicacion: "Madrid, Spain",
-      subtitulo: "Web Design & Development",
+      subtitulo: "Junior Web Developer",
       botonCV: "Resume",
     },
   };
