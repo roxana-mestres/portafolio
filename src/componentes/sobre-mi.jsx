@@ -2,22 +2,18 @@ import estilosSobreMi from "../estilos/estilos-sobre-mi.module.css";
 import PropTypes from "prop-types";
 
 function SobreMi({ idioma }) {
-  // Traducciones para el texto en diferentes idiomas
   const traducciones = {
     es: {
       titulo: "Sobre mí",
       parrafo1:
-        "¡Hola! Mi nombre es Roxana, soy filóloga inglesa y he descubierto una nueva pasión por el diseño y desarrollo de sitios web. Hace aproximadamente un año, mi interés por la programación surgió cuando me vi en la necesidad de crear una página web con WordPress. Esta experiencia me llevó a aprender acerca de HTML y CSS. A medida que me familiarizaba con estas tecnologías, mi deseo de profundizar en ellas aumentaba.",
-      parrafo2: `Fue entonces cuando decidí comprometerme a explorar esta disciplina aún más, por lo que me inscribí en el Máster de Marketing y Desarrollo Web en la Escuela de Diseño CEI de Madrid.
-
-      Lo que más me atrae del desarrollo web es la diversidad de tecnologías involucradas. Disfruto de esta profesión porque me motiva a mantener una actitud proactiva y una curiosidad constante por las innovaciones tecnológicas que surgen. El desarrollo web, para mí, representa una emocionante oportunidad de crecimiento y evolución en mi carrera, donde puedo aplicar de manera creativa y técnica mi experiencia previa.`,
+        "¡Hola! Soy Roxana, una diseñadora y desarrolladora web con experiencia en diversas tecnologías. En el frontend, cuento con habilidades en HTML, CSS, JavaScript y los fundamentos de UX/UI, además del uso de herramientas como Figma y React.js. En el backend, estoy familiarizada con tecnologías como Node.js, Express y bases de datos como MongoDB y mySQL. Además, tengo experiencia en el uso de Git y GitHub para el control de versiones y la colaboración en proyectos de desarrollo.",
+      parrafo2: `Lo que más disfruto del desarrollo web es la gran diversidad de tecnologías que existen y la constante oportunidad de aprendizaje y crecimiento que esto proporciona. Me encanta explorar nuevas herramientas y técnicas, y aplicarlas de manera creativa para diseñar experiencias digitales atractivas y eficaces que satisfagan las necesidades y deseos de los usuarios.`,
     },
     en: {
       titulo: "About Me",
       parrafo1:
-        "Hi there! I'm Roxana, an English philologist who's found a newfound passion for web design and web development. It all started about a year ago when I began my journey into programming, diving headfirst into learning HTML and CSS. This initial step ignited my determination to explore this field further, leading me to enroll in the Master's program in Marketing and Web Development at the CEI Design School in Madrid. During my time there, I had the opportunity to gain expertise in both frontend and backend development.",
-      parrafo2:
-        "What truly excites me about web development is the vast array of technologies it encompasses. This profession constantly fuels my proactive mindset and curiosity for the ever-evolving world of new technologies. Web development, to me, represents an exhilarating opportunity for personal and professional growth. It's a realm where I can creatively and technically apply my previous experience, all while expanding my professional horizons in the web development field.",
+        "Hey there! I'm Roxana, a designer and web developer with hands-on experience across various technologies. In the frontend realm, I'm proficient in HTML, CSS, JavaScript, and the essentials of UX/UI design. I also utilize tools like Figma and React.js to craft engaging user interfaces. When it comes to the backend, I'm well-acquainted with technologies such as Node.js, Express, and database management using MongoDB and MySQL. Additionally, I navigate Git and GitHub with ease for version control and collaborative projects.",
+      parrafo2: `What truly excites me about web development is the ever-evolving landscape of technologies, providing endless opportunities for learning and innovation. I thrive on exploring new tools and techniques, leveraging them creatively to design captivating and effective digital experiences that meet users' needs and expectations.`,
     },
   };
 

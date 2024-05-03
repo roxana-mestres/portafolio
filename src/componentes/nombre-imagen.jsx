@@ -34,21 +34,19 @@ function NombreImagen({ idioma }) {
     });
   };
 
-  // Define las traducciones para los elementos en diferentes idiomas
   const traducciones = {
     es: {
-      ubicacion: "Madrid, España",
+      ubicacion: "Salamanca, España",
       subtitulo: "Diseño y desarrollo web",
       botonCV: "Currículum",
     },
     en: {
-      ubicacion: "Madrid, Spain",
+      ubicacion: "Salamanca, Spain",
       subtitulo: "Junior Web Developer",
       botonCV: "Resume",
     },
   };
 
-  // Usa el idioma para obtener las traducciones correctas
   const traduccionActual = traducciones[idioma];
 
   const enlacePDFIngles = "/pdfs/CV_Roxana_Mestres_EN.pdf";
