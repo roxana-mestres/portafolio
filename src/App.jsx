@@ -7,6 +7,7 @@ import Tecnologias from "./componentes/tecnologias";
 import Proyectos from "./componentes/proyectos";
 import proyectoUnoConfig from "./componentes/proyectos/proyectoUno";
 import proyectoDosConfig from "./componentes/proyectos/proyectoDos";
+import proyectoTresConfig from "./componentes/proyectos/proyectoTres";
 import Estudios from "./componentes/estudios";
 import SubirBoton from "./componentes/botonSubir";
 import Footer from "./componentes/footer";
@@ -25,14 +26,19 @@ function App() {
   // Crea un array que contenga todos tus proyectos en diferentes idiomas
   const proyectos = [
     {
-      id: "proyectoUno",
-      es: proyectoUnoConfig.es,
-      en: proyectoUnoConfig.en,
+      id: "proyectoTres",
+      es: proyectoTresConfig.es,
+      en: proyectoTresConfig.en,
     },
     {
       id: "proyectoDos",
       es: proyectoDosConfig.es,
       en: proyectoDosConfig.en,
+    },
+    {
+      id: "proyectoUno",
+      es: proyectoUnoConfig.es,
+      en: proyectoUnoConfig.en,
     },
     // Puedes agregar más proyectos aquí según sea necesario
   ];
