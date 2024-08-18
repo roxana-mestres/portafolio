@@ -8,23 +8,25 @@ import Proyectos from "./componentes/proyectos";
 import proyectoUnoConfig from "./componentes/proyectos/proyectoUno";
 import proyectoDosConfig from "./componentes/proyectos/proyectoDos";
 import proyectoTresConfig from "./componentes/proyectos/proyectoTres";
+import proyectoCuatroConfig from "./componentes/proyectos/proyectoCuatro";
 import Estudios from "./componentes/estudios";
 import SubirBoton from "./componentes/botonSubir";
 import Footer from "./componentes/footer";
 
 function App() {
-  // Define el estado para el idioma y la función para cambiarlo
   const [idioma, setIdioma] = useState("es");
 
-  // Función para cambiar el idioma
   const cambiarIdioma = () => {
-    // Cambia el idioma entre "es" y "en" (o los idiomas que desees)
     const nuevoIdioma = idioma === "es" ? "en" : "es";
     setIdioma(nuevoIdioma);
   };
 
-  // Crea un array que contenga todos tus proyectos en diferentes idiomas
   const proyectos = [
+    {
+      id: "proyectoCuatro",
+      es: proyectoCuatroConfig.es,
+      en: proyectoCuatroConfig.en,
+    },
     {
       id: "proyectoTres",
       es: proyectoTresConfig.es,
@@ -40,7 +42,6 @@ function App() {
       es: proyectoUnoConfig.es,
       en: proyectoUnoConfig.en,
     },
-    // Puedes agregar más proyectos aquí según sea necesario
   ];
 
   return (
