@@ -14,8 +14,7 @@ function Estudios({ idioma }) {
         {
           fecha: "sept. 2024 - actualmente",
           titulo: "CESUR",
-          subtitulo:
-            "Grado Superior en Desarrollo de Aplicaciones Web (DAW)",
+          subtitulo: "Grado Superior en Desarrollo de Aplicaciones Web (DAW)",
         },
         {
           fecha: "2022 - 2023",
@@ -55,8 +54,7 @@ function Estudios({ idioma }) {
         {
           fecha: "Sept. 2024 - Present",
           titulo: "CESUR",
-          subtitulo:
-            "Professional Diploma in Web Application Development (DAW)",
+          subtitulo: "Professional Diploma in Web Application Development (DAW)",
         },
         {
           fecha: "2022 - 2023",
@@ -78,7 +76,7 @@ function Estudios({ idioma }) {
         {
           fecha: "2017 - 2018",
           titulo: "Universidad Autónoma de Barcelona",
-          subtitulo: "Master's in Audiovisual Translation",
+          subtitulo: "Master's Degree in Audiovisual Translation",
           cursos: ["Certificate in Advanced English"],
         },
         {
@@ -92,34 +90,34 @@ function Estudios({ idioma }) {
   };
 
   return (
-    <>
-      <div className={estilosEstudios["div-estudios"]}>
-        <div className={estilosEstudios["div-titulo"]}>
-          <h1 id="estudios">{traducciones[idioma].titulo}</h1>
-          <DescargarCV
-            traduccion={traducciones[idioma].boton}
-            estilos={estilosEstudios["boton"]}
-            enlacePDFIngles={enlacePDFIngles}
-            enlacePDFEspanol={enlacePDFEspanol}
-            idioma={idioma}
-          />
-        </div>
-        <div className={estilosEstudios["texto-estudios"]}>
-          {traducciones[idioma].estudios.map((estudio, index) => (
-            <div key={index}>
-              <h4 className={estilosEstudios["h4"]}>
-                {estudio.fecha} {estudio.titulo} <br /> {estudio.subtitulo}
-              </h4>
+    <div className={estilosEstudios["div-estudios"]}>
+      <div className={estilosEstudios["div-titulo"]}>
+        <h1 id="estudios">{traducciones[idioma].titulo}</h1>
+        <DescargarCV
+          traduccion={traducciones[idioma].boton}
+          estilos={estilosEstudios["boton"]}
+          enlacePDFIngles={enlacePDFIngles}
+          enlacePDFEspanol={enlacePDFEspanol}
+          idioma={idioma}
+        />
+      </div>
+      <div className={estilosEstudios["texto-estudios"]}>
+        {traducciones[idioma].estudios.map((estudio, index) => (
+          <div key={index}>
+            <h4 className={estilosEstudios["h4"]}>
+              {estudio.fecha} {estudio.titulo} <br /> {estudio.subtitulo}
+            </h4>
+            {estudio.cursos && (
               <ul>
                 {estudio.cursos.map((curso, cursoIndex) => (
                   <li key={cursoIndex}>{curso}</li>
                 ))}
               </ul>
-            </div>
-          ))}
-        </div>
+            )}
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
 
