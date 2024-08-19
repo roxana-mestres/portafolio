@@ -5,12 +5,18 @@ import DescargarCV from "./descargarCV";
 function Estudios({ idioma }) {
   const enlacePDFIngles = "/pdfs/CV_Roxana_Mestres_EN.pdf";
   const enlacePDFEspanol = "/pdfs/CV_Roxana_Mestres_ES.pdf";
-  // Define objetos con las traducciones en diferentes idiomas
+
   const traducciones = {
     es: {
       titulo: "Estudios",
       boton: "Currículum",
       estudios: [
+        {
+          fecha: "sept. 2024 - actualmente",
+          titulo: "CESUR",
+          subtitulo:
+            "Grado Superior en Desarrollo de Aplicaciones Web (DAW)",
+        },
         {
           fecha: "2022 - 2023",
           titulo: "CEI: ESCUELA DE DISEÑO Y MARKETING",
@@ -46,6 +52,12 @@ function Estudios({ idioma }) {
       titulo: "Education",
       boton: "Resume",
       estudios: [
+        {
+          fecha: "Sept. 2024 - Present",
+          titulo: "CESUR",
+          subtitulo:
+            "Professional Diploma in Web Application Development (DAW)",
+        },
         {
           fecha: "2022 - 2023",
           titulo: "CEI: ESCUELA DE DISEÑO Y MARKETING",
